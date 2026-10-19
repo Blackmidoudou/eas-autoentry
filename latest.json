@@ -1,11 +1,11 @@
 {
-  "version": "1.3.0",
-  "released_at": "2026-10-19 14:14",
-  "notes": "安装包自带探针：启动时自动部署 / 升级 cmdrunner.jar，换电脑重装不用再手工拷\n环境自检新增「自带探针」状态与「修复探针」按钮\n维修工单查询自动摆正条件：进场日期 = 当天往前推 6 个月、服务顾问清空\n索赔单自动写入厂家申请号（表头 + 申请号明细行）",
+  "version": "1.4.0",
+  "released_at": "2026-10-19 14:25",
+  "notes": "首次运行自动装探针：打开工具就自动检查 jar 与 EAS 启动参数，缺哪步补哪步，已装的自动跳过\n装完界面会提示「请完全退出 EAS 再重新打开」，重启后圆点变绿即可用\n环境自检新增「探针 agent」状态，「修复探针」现在连启动参数一起修\n注入前自动备份原始 set-client-env（.orig），改坏了可原样还原",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.3.0/EAS-AutoEntry-1.3.0-macos.zip",
-    "name": "EAS-AutoEntry-1.3.0-macos.zip",
-    "sha256": "d60db87f2217206939b853241ffc6f0dfb0a57339537cfc5d55fa07755374e3e",
-    "size": 18726970
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.4.0/EAS-AutoEntry-1.4.0-macos.zip",
+    "name": "EAS-AutoEntry-1.4.0-macos.zip",
+    "sha256": "27ad85147e29937ff6afb00570a557c6aae08483315c8dcc26bd957a88a1e6bd",
+    "size": 18774892
   }
 }
