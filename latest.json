@@ -1,11 +1,11 @@
 {
   "version": "1.2.0",
-  "released_at": "2026-10-19 13:09",
+  "released_at": "2026-10-19 13:12",
   "notes": "新增：支持 GitHub 仓库作为更新源（官方源不通时自动切换国内镜像）\n新增：「标记完成」——失败单在 EAS 里人工处理完可标记成功，今后不再重跑",
   "macos": {
     "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.2.0/EAS-AutoEntry-1.2.0-macos.zip",
     "name": "EAS-AutoEntry-1.2.0-macos.zip",
-    "sha256": "45ea507bf1fd03c8f16961ce31a56ad6673bbc93a79df8a6896406b5b57b8707",
-    "size": 18620159
+    "sha256": "7cc0072585d0ef8bbedf379d9de8e25463ab279728e4b42942987f62a7c64008",
+    "size": 18624101
   }
 }
