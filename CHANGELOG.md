@@ -7,6 +7,8 @@
 ## [1.4.0] - 2026-10-19
 
 ### 新增
+- **Windows 版正式提供**：`EAS-AutoEntry-1.4.0-windows.zip`，解压双击 `EAS-AutoEntry.exe`
+  即用（免安装），功能和 macOS 版完全一致；用 GitHub Actions 在 Windows 环境编译，两个平台同步发版
 - **首次运行自动装探针**：打开工具就自动检查三件事——`easprobe.jar` 在不在、
   `cmdrunner.jar` 是不是新的、EAS 启动参数里有没有 `-javaagent`；缺哪步补哪步，
   已装的自动跳过，装完在界面上提示「请完全退出 EAS 再重新打开」

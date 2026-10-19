@@ -40,6 +40,9 @@
 
 ## 下载安装
 
+> **先说明一件事**：仓库首页绿色 `Code` → `Download ZIP` 下到的是**源码**（只有 README、
+> CHANGELOG 这些），不是软件。软件请到右侧 **Releases** 里下，文件名带 `macos` / `windows`。
+
 ### macOS
 
 1. 到 [Releases](../../releases/latest) 下载 `EAS-AutoEntry-最新版本-macos.zip`
@@ -50,20 +53,23 @@
 ### Windows
 
 1. 到 [Releases](../../releases/latest) 下载 `EAS-AutoEntry-最新版本-windows.zip`
-2. 解压到任意目录（建议 `D:\EAS-AutoEntry`，路径别带空格）
-3. 双击 `EAS-AutoEntry.exe`
-4. 首次使用同样需要装探针（Windows 版用 `install-windows.bat`）
+2. 解压到任意目录（建议 `D:\EAS-AutoEntry`，路径别带空格和中文）
+3. 双击 `EAS-AutoEntry.exe` 即可，**免安装**，和 macOS 用法完全一样
+4. 如果弹出「Windows 已保护你的电脑」：点「更多信息」→「仍要运行」（未做代码签名，只需一次）
+5. 同一目录里的 `_internal` 文件夹不能删、不能拆开，程序靠它启动
+6. 首次运行会自动装探针；EAS 装在 `C:\Program Files` 时，右键 exe →「以管理员身份运行」
 
-> Windows 安装包尚未构建：PyInstaller 不能跨平台打包，需要在 Windows 机器上执行一次 `build_windows.bat`。构建完成后把 zip 传到 Release 即可，之后两个平台都能自动更新。
 
 ## 首次配置（探针注入）
 
 **现在不用手工装探针了**：第一次打开工具，它会自己检查并装好。
 
-1. 先装好金蝶 EAS 客户端（macOS 默认 `/Applications/EASClient.app`）
+1. 先装好金蝶 EAS 客户端（macOS 默认 `/Applications/EASClient.app`；
+   Windows 默认 `C:\Program Files\EASClient`）
 2. 打开「EAS 录单助手」，它会自动做三件事：铺 `easprobe.jar`、铺 `cmdrunner.jar`、
    把 `-javaagent` 写进 EAS 的启动配置。已经装过的步骤自动跳过
-3. 如果界面上出现橙色提示「探针已装好，只差重启 EAS」，就**完全退出 EAS**（⌘Q，不能只关窗口）
+3. 如果界面上出现橙色提示「探针已装好，只差重启 EAS」，就**完全退出 EAS**
+   （macOS 用 ⌘Q，Windows 从托盘/任务管理器确认 javaw.exe 已退出，不能只关窗口）
    再重新打开；右上角圆点变绿即成功
 
 > 工具改动的只有 EAS 的 `set-client-env.sh`（Windows 为 `set-client-env.bat`），
