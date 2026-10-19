@@ -1,11 +1,17 @@
 {
   "version": "1.4.0",
-  "released_at": "2026-10-19 14:25",
+  "released_at": "2026-10-19 15:21",
   "notes": "首次运行自动装探针：打开工具就自动检查 jar 与 EAS 启动参数，缺哪步补哪步，已装的自动跳过\n装完界面会提示「请完全退出 EAS 再重新打开」，重启后圆点变绿即可用\n环境自检新增「探针 agent」状态，「修复探针」现在连启动参数一起修\n注入前自动备份原始 set-client-env（.orig），改坏了可原样还原",
   "macos": {
     "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.4.0/EAS-AutoEntry-1.4.0-macos.zip",
     "name": "EAS-AutoEntry-1.4.0-macos.zip",
-    "sha256": "27ad85147e29937ff6afb00570a557c6aae08483315c8dcc26bd957a88a1e6bd",
+    "sha256": "f5b73516591be5a0ec2c3b8515d1dfb9427c3e597ca4a357844db764743dc507",
     "size": 18774892
+  },
+  "windows": {
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.4.0/EAS-AutoEntry-1.4.0-windows.zip",
+    "name": "EAS-AutoEntry-1.4.0-windows.zip",
+    "sha256": "a09f92beef38162478b7f6497c5ce7281cac59d9c20aa47820e96f4e79c87e78",
+    "size": 13851497
   }
 }
