@@ -1,17 +1,17 @@
 {
-  "version": "1.5.3",
-  "released_at": "2026-10-19 17:37",
-  "notes": "「导出台账」支持 Excel：保存时可选 .xlsx（默认）或纯文本 .txt，按文件后缀自动识别\nExcel 版分 6 个表：概览 + 成功 / 失败 / 需人工 / 跳过 / 未跑，带冻结首行、自动筛选、金额千分位\n概览页汇总总单数、成功与跳过数量、已录金额合计、平均耗时，底部附待人工处理提示\n同一辆车有两张保养单时，不再把前一张的录入记录算到后一张头上（之前后一张会显示\"成功\"并带着别人的单号，实际没跑，容易被漏掉）\n导入表格时改为按 VIN + 委托书号核对台账，台账里没记委托书号的旧记录仍按 VIN 兼容\n单号回填同样按 VIN + 委托书号取，避免拿到同车另一张单的索赔号\n合并多张导出的保养单跟踪表后导入，状态和单号显示更准",
+  "version": "1.7.0",
+  "released_at": "2026-10-19 21:47",
+  "notes": "索赔单业务：换成 DMS「索赔单跟踪」表，金额按单据口径回写\n\n- 导入的表换了：现在是 DMS 的「索赔单跟踪」导出（85 列、232 行那种），\n  工具按表头自动认业务、自动挑工作表，不看工作表名字（sheet / Sheet1 都行）。\n- 取数六列：F 索赔单号 → 厂家索赔申请号；N VIN；AO 委托书号；\n  AR 材料费；AZ 单据金额；BA 单据状态。\n- 工时费不再有独立列：工时 = 单据金额 − 材料费（管理费和运费并进工时里报，\n  232 行实测全部吻合）。\n- 厂家索赔申请号写 F 列，落两处（表头 + 子表），和保养单同一套方法。\n- 材料费写「实际材料索赔金额」，工时费写「实际工时索赔金额」，写完点金额调整。\n- 比对条件：单据状态 = 已交车、维修类型 = 索赔保修、\n  主机厂工单号 = 委托书号去掉「1-」前缀和末尾「A」。\n- BA 列单据状态是「提交」的行直接跳过，不参与比对（232 行里 9 行）。\n- 台账导出加「DMS索赔单号 / 工时费 / 材料费 / 单据金额 / EAS索赔单号」。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.3/EAS-AutoEntry-1.5.3-macos.zip",
-    "name": "EAS-AutoEntry-1.5.3-macos.zip",
-    "sha256": "9494c919f3d8d79ea097823ce891375d620378b3c86ca0722a19083a35b3c02e",
-    "size": 18794376
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.0/EAS-AutoEntry-1.7.0-macos.zip",
+    "name": "EAS-AutoEntry-1.7.0-macos.zip",
+    "sha256": "563b95ac82ec2a1e48bb986676aa31fe67451549b77a7e859dd5eb2b3df2c851",
+    "size": 18803327
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.3/EAS-AutoEntry-1.5.3-windows.zip",
-    "name": "EAS-AutoEntry-1.5.3-windows.zip",
-    "sha256": "ab2e7691bdcbc11aba828d5d8abfcf230af7878988ed9a9a424a7e38115729c9",
-    "size": 13866472
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.0/EAS-AutoEntry-1.7.0-windows.zip",
+    "name": "EAS-AutoEntry-1.7.0-windows.zip",
+    "sha256": "fe4ce7324da60ae46c4e66362f5f432949e2c5502792c466db3704b6cdb387c2",
+    "size": 13877354
   }
 }
