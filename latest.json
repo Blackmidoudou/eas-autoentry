@@ -1,11 +1,11 @@
 {
-  "version": "1.2.0",
-  "released_at": "2026-10-19 13:12",
-  "notes": "新增：支持 GitHub 仓库作为更新源（官方源不通时自动切换国内镜像）\n新增：「标记完成」——失败单在 EAS 里人工处理完可标记成功，今后不再重跑",
+  "version": "1.3.0",
+  "released_at": "2026-10-19 14:14",
+  "notes": "安装包自带探针：启动时自动部署 / 升级 cmdrunner.jar，换电脑重装不用再手工拷\n环境自检新增「自带探针」状态与「修复探针」按钮\n维修工单查询自动摆正条件：进场日期 = 当天往前推 6 个月、服务顾问清空\n索赔单自动写入厂家申请号（表头 + 申请号明细行）",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.2.0/EAS-AutoEntry-1.2.0-macos.zip",
-    "name": "EAS-AutoEntry-1.2.0-macos.zip",
-    "sha256": "7cc0072585d0ef8bbedf379d9de8e25463ab279728e4b42942987f62a7c64008",
-    "size": 18624101
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.3.0/EAS-AutoEntry-1.3.0-macos.zip",
+    "name": "EAS-AutoEntry-1.3.0-macos.zip",
+    "sha256": "d60db87f2217206939b853241ffc6f0dfb0a57339537cfc5d55fa07755374e3e",
+    "size": 18726970
   }
 }
