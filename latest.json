@@ -1,17 +1,17 @@
 {
-  "version": "1.4.0",
-  "released_at": "2026-10-19 15:21",
-  "notes": "首次运行自动装探针：打开工具就自动检查 jar 与 EAS 启动参数，缺哪步补哪步，已装的自动跳过\n装完界面会提示「请完全退出 EAS 再重新打开」，重启后圆点变绿即可用\n环境自检新增「探针 agent」状态，「修复探针」现在连启动参数一起修\n注入前自动备份原始 set-client-env（.orig），改坏了可原样还原",
+  "version": "1.5.0",
+  "released_at": "2026-10-19 16:03",
+  "notes": "新增「标记已录入」批量功能：勾选多行一键标成已录入，每行可填自己的索赔单号 / 结算单号\n填单号支持从 Excel 复制一整列粘进弹窗，自动往下填满，几十行几步搞定\n表格里的 DMS 结算单号会在弹窗里作为对照列显示\n标记过的行写进台账与运行日志（含单号），重开工具、重新导入表格都不会再重跑",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.4.0/EAS-AutoEntry-1.4.0-macos.zip",
-    "name": "EAS-AutoEntry-1.4.0-macos.zip",
-    "sha256": "f5b73516591be5a0ec2c3b8515d1dfb9427c3e597ca4a357844db764743dc507",
-    "size": 18774892
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.0/EAS-AutoEntry-1.5.0-macos.zip",
+    "name": "EAS-AutoEntry-1.5.0-macos.zip",
+    "sha256": "c7522157e7a996dbe50444ba84a23864e1969c5bc7c44467422df4a1f252380d",
+    "size": 18777827
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.4.0/EAS-AutoEntry-1.4.0-windows.zip",
-    "name": "EAS-AutoEntry-1.4.0-windows.zip",
-    "sha256": "a09f92beef38162478b7f6497c5ce7281cac59d9c20aa47820e96f4e79c87e78",
-    "size": 13851497
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.0/EAS-AutoEntry-1.5.0-windows.zip",
+    "name": "EAS-AutoEntry-1.5.0-windows.zip",
+    "sha256": "d674854032ff22f47a18e095fbbaa1042930f86446e29ea2bad283365664ee5a",
+    "size": 13853716
   }
 }
