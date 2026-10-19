@@ -58,17 +58,21 @@
 
 ## 首次配置（探针注入）
 
-工具是通过一个 Java 探针操作 EAS 界面的，装一次就行：
+**现在不用手工装探针了**：第一次打开工具，它会自己检查并装好。
 
-1. 完全退出金蝶 EAS 客户端
-2. 运行安装脚本（macOS：`install-macos.sh`，Windows：`install-windows.bat`，以管理员身份）
-3. 重新打开 EAS，工具右上角圆点变绿显示「EAS 已连接」即成功
+1. 先装好金蝶 EAS 客户端（macOS 默认 `/Applications/EASClient.app`）
+2. 打开「EAS 录单助手」，它会自动做三件事：铺 `easprobe.jar`、铺 `cmdrunner.jar`、
+   把 `-javaagent` 写进 EAS 的启动配置。已经装过的步骤自动跳过
+3. 如果界面上出现橙色提示「探针已装好，只差重启 EAS」，就**完全退出 EAS**（⌘Q，不能只关窗口）
+   再重新打开；右上角圆点变绿即成功
 
-> **探针本体已随安装包一起提供**（`cmdrunner.jar`）。工具每次启动会检查
-> `~/eas-probe` 里的探针，缺了就装、旧了就换（旧版自动备份成 `.bak-时间戳`），
-> 所以升级软件后不用再手工拷 jar。只剩「注入 javaagent」这一步必须做一次——
-> 它要改 EAS 的启动参数，只能由安装脚本完成。
-> 「环境自检」里能看到自带探针的版本和同步状态，点「修复探针」可强制重新部署。
+> 工具改动的只有 EAS 的 `set-client-env.sh`（Windows 为 `set-client-env.bat`），
+> 在末尾追加一段带 `EAS-PROBE INJECT` 标记的块，这个文件在 EAS 更新器的豁免名单里，
+> 客户端升级不会冲掉。原始文件已备份到探针目录（`set-client-env.sh.orig`），
+> 想恢复把那段删掉即可。
+>
+> Windows 上 EAS 装在 `C:\Program Files` 时需要管理员权限：右键「以管理员身份运行」工具，
+> 或在探针目录里手动跑一次 `install-windows.bat`。
 
 ## 日常使用
 
