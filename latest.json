@@ -1,17 +1,17 @@
 {
-  "version": "1.5.0",
-  "released_at": "2026-10-19 16:03",
-  "notes": "新增「标记已录入」批量功能：勾选多行一键标成已录入，每行可填自己的索赔单号 / 结算单号\n填单号支持从 Excel 复制一整列粘进弹窗，自动往下填满，几十行几步搞定\n表格里的 DMS 结算单号会在弹窗里作为对照列显示\n标记过的行写进台账与运行日志（含单号），重开工具、重新导入表格都不会再重跑",
+  "version": "1.5.1",
+  "released_at": "2026-10-19 16:16",
+  "notes": "修复 Windows 权限问题：EAS 在 Program Files 下时，点「修复探针」会自动弹出系统授权窗（UAC），点「是」即可，不再需要右键以管理员身份运行\n支持 EAS 装在非默认位置：找不到时会自动扫描常见目录，也可以在「环境自检 → 指定 EAS 位置」里手工选择并记住\n环境自检新增「配置写入」状态（可写 / 需要管理员）与「导出诊断」按钮，一键导出排查信息",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.0/EAS-AutoEntry-1.5.0-macos.zip",
-    "name": "EAS-AutoEntry-1.5.0-macos.zip",
-    "sha256": "c7522157e7a996dbe50444ba84a23864e1969c5bc7c44467422df4a1f252380d",
-    "size": 18777827
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.1/EAS-AutoEntry-1.5.1-macos.zip",
+    "name": "EAS-AutoEntry-1.5.1-macos.zip",
+    "sha256": "282006f486ba0c9fc6b0946225c79eabf8492f6b33e73a2c35de02d6ea38ec68",
+    "size": 18785676
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.0/EAS-AutoEntry-1.5.0-windows.zip",
-    "name": "EAS-AutoEntry-1.5.0-windows.zip",
-    "sha256": "d674854032ff22f47a18e095fbbaa1042930f86446e29ea2bad283365664ee5a",
-    "size": 13853716
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.1/EAS-AutoEntry-1.5.1-windows.zip",
+    "name": "EAS-AutoEntry-1.5.1-windows.zip",
+    "sha256": "4ead3a10ec2ede5395e373eb7dd6335b4d7286eab325e2714740b40ebb9f353c",
+    "size": 13859059
   }
 }
