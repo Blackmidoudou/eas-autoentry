@@ -105,6 +105,12 @@
 
 更新源支持 GitHub 仓库、内网 http 服务器、局域网共享盘。走 GitHub 时会自动在官方源不通时切换到国内镜像。
 
+GitHub 直连打不开时，两种办法任选：
+
+1. **更新弹窗里点镜像按钮**（jsDelivr / ghfast.top / gh-proxy.com / ghproxy.net），点一下自动换源并重新检查；
+2. 或把镜像地址粘进「更新地址」→「保存地址」，程序会优先走你填的镜像，例如：
+   `https://cdn.jsdelivr.net/gh/Blackmidoudou/eas-autoentry@main/`
+
 ## 发布新版本（维护者）
 
 ```bash

@@ -4,6 +4,19 @@
 版本号遵循语义化版本。每次发版，客户端「检查更新」面板里显示的更新内容
 与这里的条目一致。
 
+## [1.5.2] - 2026-10-19
+
+### 新增（更新走镜像）
+- **GitHub 连不上也能更新**：更新弹窗里加了一排镜像按钮
+  （GitHub 直连 / jsDelivr / ghfast.top / gh-proxy.com / ghproxy.net），
+  点一下自动换源并重新检查，不用手抄地址
+- **更新地址可以直接粘镜像地址**：粘 `https://cdn.jsdelivr.net/gh/Blackmidoudou/eas-autoentry@main/`
+  或 `https://ghfast.top/https://raw.githubusercontent.com/Blackmidoudou/eas-autoentry/main/`
+  这类镜像地址都能识别，并且优先走你填的那个镜像
+- 镜像清单扩到 6 个：去掉已失效的 raw.gitmirror.com，补充 gh.llkk.cc；
+  某个镜像返回的不是版本清单时会自动跳下一个源，不会直接报错
+- 直接粘 `.../latest.json` 全路径也能认，会自动退回到所在目录
+
 ## [1.5.1] - 2026-10-19
 
 ### 修复（Windows 权限）
