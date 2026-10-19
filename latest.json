@@ -1,17 +1,17 @@
 {
-  "version": "1.5.3",
-  "released_at": "2026-10-19 16:58",
-  "notes": "同一辆车有两张保养单时，不再把前一张的录入记录算到后一张头上（之前后一张会显示\"成功\"并带着别人的单号，实际没跑，容易被漏掉）\n导入表格时改为按 VIN + 委托书号核对台账，台账里没记委托书号的旧记录仍按 VIN 兼容\n单号回填同样按 VIN + 委托书号取，避免拿到同车另一张单的索赔号\n合并多张导出的保养单跟踪表后导入，状态和单号显示更准",
+  "version": "1.5.2",
+  "released_at": "2026-10-19 16:44",
+  "notes": "GitHub 连不上也能更新了：更新弹窗里加了一排镜像按钮（jsDelivr / ghfast.top / gh-proxy.com / ghproxy.net），点一下自动换源并重新检查\n更新地址可以直接粘镜像地址，程序会自动识别并优先走你填的那个镜像\n镜像清单从 3 个扩到 6 个，并去掉已失效的 raw.gitmirror.com（换成 gh.llkk.cc 等）\n某个镜像返回的不是版本清单时会自动跳到下一个源，不会直接报错",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.3/EAS-AutoEntry-1.5.3-macos.zip",
-    "name": "EAS-AutoEntry-1.5.3-macos.zip",
-    "sha256": "8f41a14e11eab74e156898f314b35356b4e8b7577fd837dfd28e68c59b3e3dd3",
-    "size": 18789196
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.2/EAS-AutoEntry-1.5.2-macos.zip",
+    "name": "EAS-AutoEntry-1.5.2-macos.zip",
+    "sha256": "a20da09404ec8431d938c5b7f766012c199aeba149f08d8a628a4b1e18cd065d",
+    "size": 18787677
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.3/EAS-AutoEntry-1.5.3-windows.zip",
-    "name": "EAS-AutoEntry-1.5.3-windows.zip",
-    "sha256": "f861dba522d19a128940b5e5d23e068f4cc51f650dcc4d5060a7cd53b15d9304",
-    "size": 13862788
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.2/EAS-AutoEntry-1.5.2-windows.zip",
+    "name": "EAS-AutoEntry-1.5.2-windows.zip",
+    "sha256": "6ccd84ffe777f60487979b4c5fb543a8334ab05afa6681f449955eeaac9a4a31",
+    "size": 13861458
   }
 }
