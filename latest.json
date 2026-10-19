@@ -1,17 +1,17 @@
 {
-  "version": "1.5.1",
-  "released_at": "2026-10-19 16:16",
-  "notes": "修复 Windows 权限问题：EAS 在 Program Files 下时，点「修复探针」会自动弹出系统授权窗（UAC），点「是」即可，不再需要右键以管理员身份运行\n支持 EAS 装在非默认位置：找不到时会自动扫描常见目录，也可以在「环境自检 → 指定 EAS 位置」里手工选择并记住\n环境自检新增「配置写入」状态（可写 / 需要管理员）与「导出诊断」按钮，一键导出排查信息",
+  "version": "1.5.2",
+  "released_at": "2026-10-19 16:44",
+  "notes": "GitHub 连不上也能更新了：更新弹窗里加了一排镜像按钮（jsDelivr / ghfast.top / gh-proxy.com / ghproxy.net），点一下自动换源并重新检查\n更新地址可以直接粘镜像地址，程序会自动识别并优先走你填的那个镜像\n镜像清单从 3 个扩到 6 个，并去掉已失效的 raw.gitmirror.com（换成 gh.llkk.cc 等）\n某个镜像返回的不是版本清单时会自动跳到下一个源，不会直接报错",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.1/EAS-AutoEntry-1.5.1-macos.zip",
-    "name": "EAS-AutoEntry-1.5.1-macos.zip",
-    "sha256": "282006f486ba0c9fc6b0946225c79eabf8492f6b33e73a2c35de02d6ea38ec68",
-    "size": 18785676
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.2/EAS-AutoEntry-1.5.2-macos.zip",
+    "name": "EAS-AutoEntry-1.5.2-macos.zip",
+    "sha256": "a20da09404ec8431d938c5b7f766012c199aeba149f08d8a628a4b1e18cd065d",
+    "size": 18787677
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.1/EAS-AutoEntry-1.5.1-windows.zip",
-    "name": "EAS-AutoEntry-1.5.1-windows.zip",
-    "sha256": "4ead3a10ec2ede5395e373eb7dd6335b4d7286eab325e2714740b40ebb9f353c",
-    "size": 13859059
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.5.2/EAS-AutoEntry-1.5.2-windows.zip",
+    "name": "EAS-AutoEntry-1.5.2-windows.zip",
+    "sha256": "6ccd84ffe777f60487979b4c5fb543a8334ab05afa6681f449955eeaac9a4a31",
+    "size": 13861458
   }
 }
