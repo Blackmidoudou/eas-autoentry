@@ -1,17 +1,17 @@
 {
-  "version": "1.7.3",
-  "released_at": "2026-10-20 13:36",
-  "notes": "EAS 里没有配件分录的单，材料费写不进去时不再卡死整批\n\n- 现象：有些工单下推成索赔单后没有任何配件分录（材料 = 0.00），但 DMS 表里\n  材料费有钱。EAS 规则是「分录无维修配件，实际配件索赔金额不允许录入」，\n  于是写完材料再点金额调整会弹出「信息提示」，模态框把流程整个卡死，\n  日志只报一句看不懂的「EDT 无响应」，整批停摆。\n- 现在**写材料前先数一遍配件分录（WarrSPEntry）**：\n  - 有分录：照旧写材料 + 金额调整；\n  - 没分录：材料不写（写了也进不去），只写工时，金额调整照点，\n    第 9 步合计改按「只含工时」比对，单子正常走完提交→结案→结算。\n- 材料差额写进台账备注列：`DMS材料xxx：EAS无配件分录未写入，索赔金额少材料部分`，\n  日志里该单显示「成功（带备注）」，一眼能看出哪几张单材料没报上去。\n- 顺手加固：万一金额调整再被弹窗拦截，探针会把弹窗原文抓出来、自动点确定关掉，\n  报错直接写「金额调整被弹窗拦截：<原文>」，不再是神秘的 EDT 超时。\n- 探针版本 1.5.3，热加载即生效；新装或更新工具后首次启动会自动铺好。",
+  "version": "1.7.4",
+  "released_at": "2026-10-20 22:52",
+  "notes": "",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.3/EAS-AutoEntry-1.7.3-macos.zip",
-    "name": "EAS-AutoEntry-1.7.3-macos.zip",
-    "sha256": "586058ca518563b54b59f91262e4a4e4afb010037d0d193cfed7ccc1ccf354b4",
-    "size": 18808574
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.4/EAS-AutoEntry-1.7.4-macos.zip",
+    "name": "EAS-AutoEntry-1.7.4-macos.zip",
+    "sha256": "1e95a65279bf02fb93ce53238cd462686e4906cc187ca35e2e333e007bbe32fb",
+    "size": 18812561
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.3/EAS-AutoEntry-1.7.3-windows.zip",
-    "name": "EAS-AutoEntry-1.7.3-windows.zip",
-    "sha256": "7665cac4037473d5e2ce7c52acc391aa6fb8445a740407a5f12b6a056d99c7cc",
-    "size": 13950225
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.4/EAS-AutoEntry-1.7.4-windows.zip",
+    "name": "EAS-AutoEntry-1.7.4-windows.zip",
+    "sha256": "483dafdbb6f8e4c38d08784afa85aa51a2e0fb41994b22c45205f3feadcb0b2c",
+    "size": 13955140
   }
 }
