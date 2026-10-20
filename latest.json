@@ -1,17 +1,17 @@
 {
-  "version": "1.7.1",
-  "released_at": "2026-10-20 10:32",
-  "notes": "修复跑批后 EAS 窗口越积越多\n\n- 根因一：关窗命令是连发两条，而探针命令通道 4 秒轮询一次，后一条会把前一条\n  覆盖掉，结算单窗口几乎从来没被关过。现在合成一条命令，一次关本单的两个窗口。\n- 根因二：原来按「已结案 / 已审核」状态关，单据结算完状态会变成已结算，\n  条件匹配不上。现在按单号精确关，不看状态。\n- 流程末尾由探针自己关窗（第 17 步收尾之后），只关本单的索赔单号和结算单号，\n  不碰你正开着的别的单据，也不再依赖工具端发命令。\n- 工具栏「清屏」改走一条 closeall，能一次清掉所有已完工的索赔单和结算单窗口。\n- 附带：探针版本 1.5.1。装好后需完全退出 EAS 客户端再打开，探针才会生效。",
+  "version": "1.7.2",
+  "released_at": "2026-10-20 12:29",
+  "notes": "保修类型没带出来时，提交前自动补成「一般索赔」\n\n- 现象：有些工单下推成索赔单后，「保修类型」这一栏是空的，点提交会被 EAS 拦下，\n  整单卡在那儿，得人工进去补一栏再提交。\n- 现在第 10 步点提交之前先读一次保修类型：有值就直接过（成本几十毫秒），\n  是空的就按代码 02 回车，让 EAS 自己解析成「一般索赔」，回读确认有值再提交。\n- 日志会写清楚走了哪条路，三种情况一眼能分：\n  「✓ 保修类型「一般索赔」已带出」/「✓ 保修类型为空 → 录入 02 → 一般索赔」/\n  「⚠ 保修类型为空，录入 02 后仍未带出（提交可能失败）」。\n- 为什么不改成「提交失败后再补」：实测被拦下要等 121 秒才返回，而且提示框还是空的，\n  根本看不出原因；提交前读一个字段几乎不花时间，所以选提交前检测。\n- 探针新增诊断命令 act wt <类名> [clear|02]，可以单独验证这一栏的读、清、写。\n- 探针版本 1.5.2。装好后需完全退出 EAS 客户端再打开，探针才会生效。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.1/EAS-AutoEntry-1.7.1-macos.zip",
-    "name": "EAS-AutoEntry-1.7.1-macos.zip",
-    "sha256": "78732c6f4ed903ec8a1ea9ccb846d6b974738e266533dc47991829a96eba3bd7",
-    "size": 18803423
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.2/EAS-AutoEntry-1.7.2-macos.zip",
+    "name": "EAS-AutoEntry-1.7.2-macos.zip",
+    "sha256": "5c55dc1b01e1b1784f6193d2e8eb8beed3d2dcbf1da11f31ac8a44dc24f14876",
+    "size": 18807830
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.1/EAS-AutoEntry-1.7.1-windows.zip",
-    "name": "EAS-AutoEntry-1.7.1-windows.zip",
-    "sha256": "cd7f397a8c3e82015af650bb2c7dc74d1f098e05ea444c4b7e1e96a522dc8e51",
-    "size": 13946012
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.2/EAS-AutoEntry-1.7.2-windows.zip",
+    "name": "EAS-AutoEntry-1.7.2-windows.zip",
+    "sha256": "15e876b6976b26324dff677a80b4ed1a46fee0bf63c2fc2be083befd1ee5a5bc",
+    "size": 13948619
   }
 }
