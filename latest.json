@@ -1,17 +1,17 @@
 {
-  "version": "1.7.8",
-  "released_at": "2026-10-21 13:16",
-  "notes": "当前正在录入的那一行自动滚进视野并居中，跑一批单不用再手动拖着表格找进度；正在录入的行高亮加强（底色加深 + 左侧蓝条呼吸闪烁）。手动滚动表格时工具不抢位置，切换到下一单时自动恢复跟随。",
+  "version": "1.7.9",
+  "released_at": "2026-10-21 14:42",
+  "notes": "修复 Windows 上「修复探针」必定失败的问题（写入 EAS 启动配置时 Python 格式化崩溃，报 unsupported format character J）；顺带修正 bat 注释前缀、换行重复转义、GBK 配置写坏、jar 被占用时的提示。探针改为 Java 6 字节码，仍用 JDK 1.6 的旧 EAS 客户端也能加载。界面「手工写法」提示按平台显示。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.8/EAS-AutoEntry-1.7.8-macos.zip",
-    "name": "EAS-AutoEntry-1.7.8-macos.zip",
-    "sha256": "6031577a019c1fe29a97757274f29e457292f9bbbecea84095f2ad9826874c58",
-    "size": 18820396
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.9/EAS-AutoEntry-1.7.9-macos.zip",
+    "name": "EAS-AutoEntry-1.7.9-macos.zip",
+    "sha256": "19ed42548d0462f6b1363b81413c35517e53f648e84fc2672934da9a05a60a5c",
+    "size": 18822078
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.8/EAS-AutoEntry-1.7.8-windows.zip",
-    "name": "EAS-AutoEntry-1.7.8-windows.zip",
-    "sha256": "1dd832d93c3b551045aaed5b62524e121dd3473c09235b4a6b48dee00d7b805b",
-    "size": 13962754
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.9/EAS-AutoEntry-1.7.9-windows.zip",
+    "name": "EAS-AutoEntry-1.7.9-windows.zip",
+    "sha256": "010d42858570af814c1d9da89c68e86c91de8b37f0109874848a4301b683b42a",
+    "size": 13965929
   }
 }
