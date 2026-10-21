@@ -1,17 +1,17 @@
 {
-  "version": "1.7.13",
-  "released_at": "2026-10-21 17:21",
-  "notes": "新增掉线自动重连：EAS 长时间无操作会弹「掉线，请重新连接」的提示框，之前必须人工点一下重连才能继续，录单会卡在那里。现在探针会自动发现这个弹窗并点掉，全程无需人工救场。识别很谨慎，只处理包含掉线、重新登录、连接超时等字样的对话框，普通提示框（如「保存成功」）不会被触碰；每次自动处理都会写进探针日志。探针升到 1.5.10，升级后首次启动自动生效。",
+  "version": "1.7.14",
+  "released_at": "2026-10-21 18:07",
+  "notes": "修复 Windows 上每录完一单 EAS 窗口就残留一个的问题：关窗动作原来在后台线程直接操作界面（Windows 上会静默失败，一个窗口都关不上），现在统一在界面线程执行；并且每单结束时（无论成功失败）自动清掉残留的索赔单/结算单窗口。探针升到 1.5.11，升级后首次启动自动生效。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.13/EAS-AutoEntry-1.7.13-macos.zip",
-    "name": "EAS-AutoEntry-1.7.13-macos.zip",
-    "sha256": "87ea0539e99c4002c170bfeac0f7bd0e4086c00b6788ab0dfac37a8e0a5dad7a",
-    "size": 18827142
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.14/EAS-AutoEntry-1.7.14-macos.zip",
+    "name": "EAS-AutoEntry-1.7.14-macos.zip",
+    "sha256": "e895b18d8f423eeeda3c5b3018efd5e2e5ae9f64b949e437da1badee9cd54806",
+    "size": 18830460
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.13/EAS-AutoEntry-1.7.13-windows.zip",
-    "name": "EAS-AutoEntry-1.7.13-windows.zip",
-    "sha256": "5fd1916f7e37ea557e89906ecce790bc3157726762e881913d7d96188029bd25",
-    "size": 13970402
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.14/EAS-AutoEntry-1.7.14-windows.zip",
+    "name": "EAS-AutoEntry-1.7.14-windows.zip",
+    "sha256": "a13e7dff1dbc880030e1368013b86984448bd4dbd6fc82570083d3dc125ee862",
+    "size": 13972900
   }
 }
