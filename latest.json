@@ -1,17 +1,17 @@
 {
-  "version": "1.7.16",
-  "released_at": "2026-10-21 21:36",
-  "notes": "点开始/继续前先自检 EAS 弹窗：屏幕上挂着没点掉的弹窗（掉线框、服务端报错框等）时拒绝开跑并提示先处理，不再出现「没管弹窗就开跑、整批单逐条以 EAS未查询到工单 失败」。探针 1.5.13（只换 cmdrunner.jar，热加载即生效，无需重启 EAS），仍兼容 JDK 1.6 / 1.8。",
+  "version": "1.7.17",
+  "released_at": "2026-10-21 22:13",
+  "notes": "点开始/继续恢复秒开：自检数据由探针看门狗周期性落盘，点开始直接读文件（<1秒放行/拦截），不再等命令通道轮询；job.log 改按单追加并加分步计时（上一步用时/末步用时）。说明：单均录单耗时经核算一直稳定在 60-67 秒未变。本版换了 agent 探针，装好后需完全退出 EAS 再重开一次。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.16/EAS-AutoEntry-1.7.16-macos.zip",
-    "name": "EAS-AutoEntry-1.7.16-macos.zip",
-    "sha256": "374f8bdf93e41eedaeb3b6cd5d055698723c83cd6053b5cd2c5790dbd1cedae1",
-    "size": 18832558
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.17/EAS-AutoEntry-1.7.17-macos.zip",
+    "name": "EAS-AutoEntry-1.7.17-macos.zip",
+    "sha256": "9318e52f168c8753004759fa58348a14f451e1f58abe21741457e41d90c60673",
+    "size": 18835533
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.16/EAS-AutoEntry-1.7.16-windows.zip",
-    "name": "EAS-AutoEntry-1.7.16-windows.zip",
-    "sha256": "094a12efa8384344782b782fd12413703794bf8107dbaf904af39cbc1771d5c9",
-    "size": 13976075
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.17/EAS-AutoEntry-1.7.17-windows.zip",
+    "name": "EAS-AutoEntry-1.7.17-windows.zip",
+    "sha256": "7079224e0d893f7f50e918dbf0542f5b1fff06e9c13aee0c18c94e007d87f5a7",
+    "size": 13978402
   }
 }
