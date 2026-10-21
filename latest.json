@@ -1,17 +1,17 @@
 {
-  "version": "1.7.10",
-  "released_at": "2026-10-21 15:05",
-  "notes": "修复「点开始没反应、必须点一次暂停才能跑」：录单线程意外出错时状态会永久卡在运行中（再点开始只会提示已经在跑了），现在会自动复位并写进日志；探针偶尔漏接一次指令时会自动补投，并区分「仍在跑上一单」和「没收到指令」；界面未就绪时点开始也会有提示。本次只改客户端，探针无需重装。",
+  "version": "1.7.11",
+  "released_at": "2026-10-21 15:19",
+  "notes": "VIN 查询不再干等：每次最多等 5 秒，没结果就再点一次查询，最多 3 次；3 次都查不到就判「EAS未查询到工单」直接跳过（原来一次要等 90 秒）。本版探针升到 1.5.8，升级后首次启动会自动换新探针，无需手动重装。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.10/EAS-AutoEntry-1.7.10-macos.zip",
-    "name": "EAS-AutoEntry-1.7.10-macos.zip",
-    "sha256": "5fa1310e4188f371763320e721acd923c2e86f9e48affe67e9c293a41c42fbc5",
-    "size": 18823057
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.11/EAS-AutoEntry-1.7.11-macos.zip",
+    "name": "EAS-AutoEntry-1.7.11-macos.zip",
+    "sha256": "5cf2f5cd457db65a05ab800df2838aad66b9a49beb3c1b1d9e614d7f94301e17",
+    "size": 18823313
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.10/EAS-AutoEntry-1.7.10-windows.zip",
-    "name": "EAS-AutoEntry-1.7.10-windows.zip",
-    "sha256": "144d2f671d2ef3416492fc07399f02132cd1861deaf0443f618aefa5a02ec22f",
-    "size": 13966285
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.11/EAS-AutoEntry-1.7.11-windows.zip",
+    "name": "EAS-AutoEntry-1.7.11-windows.zip",
+    "sha256": "0a7ece865f454d75e49eead6ee7c94feea39498484305126f266f0a030c4d107",
+    "size": 13965845
   }
 }
