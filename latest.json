@@ -1,17 +1,17 @@
 {
-  "version": "1.7.5",
-  "released_at": "2026-10-21 10:05",
-  "notes": "导入表格后不用再点业务按钮：工具会看委托书号前缀自己判断。\n0- 保养单、1- 索赔单、Z- 市场处置，表头只用来确认「列怎么读」。\n\n三处业务规则调整：\n· 保养单：维修类型除了「定期保养（厂家付费）」，也认「首保（厂家付费）」\n· 索赔单：同一委托书下多个索赔单号合成一张单，一张单挂多个申请号\n· 索赔单：单据状态「录入」不再录入；同委托书下有「一审驳回」「二审驳回」的整组跳过，\n  「入库驳回」照常录入 —— 与市场处置口径完全一致\n\n旧数据兼容：\n· 同一委托书在旧版分别建过多张单的，台账申请号自动取并集，不会误报\"缺申请号\"\n· 只录过部分明细的，会提示\"台账只记了 1/2 个申请号，缺 XXX\"，提醒回 EAS 补录",
+  "version": "1.7.6",
+  "released_at": "2026-10-21 10:45",
+  "notes": "业务按钮改成指示灯样式：哪个业务亮绿灯，就代表当前按哪套规则录入\n（和右上角「EAS 已连接」同款绿）。导入表格自动识别后灯会立即跟过去，\n不用再猜现在跑的是哪种单。仍然可以手动点击切换。\n\n顺带修复：自动识别切换业务后，按钮高亮不跟随的问题。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.5/EAS-AutoEntry-1.7.5-macos.zip",
-    "name": "EAS-AutoEntry-1.7.5-macos.zip",
-    "sha256": "1bc16b246c158fdb995896f122764c389d9bf3c9c65dab9d316f3fcf01628ee6",
-    "size": 18813823
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.6/EAS-AutoEntry-1.7.6-macos.zip",
+    "name": "EAS-AutoEntry-1.7.6-macos.zip",
+    "sha256": "64db908897ec7255abe001975aa1ccb37a5f56ce14be62b7cc915e2e1ea3b1cd",
+    "size": 18816841
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.5/EAS-AutoEntry-1.7.5-windows.zip",
-    "name": "EAS-AutoEntry-1.7.5-windows.zip",
-    "sha256": "dd467d7f02b9fa5b336b5ad640cf06cadd255608753b142e6a7867f1e379c243",
-    "size": 13959153
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.6/EAS-AutoEntry-1.7.6-windows.zip",
+    "name": "EAS-AutoEntry-1.7.6-windows.zip",
+    "sha256": "4a33b8161801feecafb00e69fc3817e269c6316915d0df9504021c70ba79f881",
+    "size": 13959998
   }
 }
