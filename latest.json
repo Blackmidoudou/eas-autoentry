@@ -1,17 +1,17 @@
 {
   "version": "1.7.15",
-  "released_at": "2026-10-21 20:59",
-  "notes": "",
+  "released_at": "2026-10-21 21:00",
+  "notes": "补充识别另一种说法的掉线弹窗：「您与系统的联系已被中断…空闲时间过长…」（按钮是「尝试重连」）——之前只认「掉线，请重新连接」那一种文案，遇到这种就一直卡着要人工点。现在探针会自动发现并点「尝试重连」，弹窗反复出现也会自动反复处理，绝不会点「退出系统」。探针升到 1.5.12，升级后首次启动自动生效。",
   "macos": {
     "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.15/EAS-AutoEntry-1.7.15-macos.zip",
     "name": "EAS-AutoEntry-1.7.15-macos.zip",
-    "sha256": "20b380351ce5d8f49943cb074c4ba67a2cf5fb243cf0cccbdb433256d1e0d38d",
+    "sha256": "dd204cec8159294467368b339682e7a28555098bc1062223174a08e53e081bd4",
     "size": 18830883
   },
   "windows": {
     "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.15/EAS-AutoEntry-1.7.15-windows.zip",
     "name": "EAS-AutoEntry-1.7.15-windows.zip",
-    "sha256": "0c2c0648bd6ccb3f47e3621b54595179481c3ec9ab9d0df4c09e2901f8d68d81",
+    "sha256": "4311f771846eea7f12f86bfa96fc203f911f73c1c52fba123c1d7d4945c1305b",
     "size": 13973959
   }
 }
