@@ -1,17 +1,17 @@
 {
-  "version": "1.7.14",
-  "released_at": "2026-10-21 18:07",
-  "notes": "修复 Windows 上每录完一单 EAS 窗口就残留一个的问题：关窗动作原来在后台线程直接操作界面（Windows 上会静默失败，一个窗口都关不上），现在统一在界面线程执行；并且每单结束时（无论成功失败）自动清掉残留的索赔单/结算单窗口。探针升到 1.5.11，升级后首次启动自动生效。",
+  "version": "1.7.15",
+  "released_at": "2026-10-21 20:59",
+  "notes": "",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.14/EAS-AutoEntry-1.7.14-macos.zip",
-    "name": "EAS-AutoEntry-1.7.14-macos.zip",
-    "sha256": "e895b18d8f423eeeda3c5b3018efd5e2e5ae9f64b949e437da1badee9cd54806",
-    "size": 18830460
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.15/EAS-AutoEntry-1.7.15-macos.zip",
+    "name": "EAS-AutoEntry-1.7.15-macos.zip",
+    "sha256": "20b380351ce5d8f49943cb074c4ba67a2cf5fb243cf0cccbdb433256d1e0d38d",
+    "size": 18830883
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.14/EAS-AutoEntry-1.7.14-windows.zip",
-    "name": "EAS-AutoEntry-1.7.14-windows.zip",
-    "sha256": "a13e7dff1dbc880030e1368013b86984448bd4dbd6fc82570083d3dc125ee862",
-    "size": 13972900
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.15/EAS-AutoEntry-1.7.15-windows.zip",
+    "name": "EAS-AutoEntry-1.7.15-windows.zip",
+    "sha256": "0c2c0648bd6ccb3f47e3621b54595179481c3ec9ab9d0df4c09e2901f8d68d81",
+    "size": 13973959
   }
 }
