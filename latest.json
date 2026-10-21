@@ -1,17 +1,17 @@
 {
-  "version": "1.7.12",
-  "released_at": "2026-10-21 15:29",
-  "notes": "兼容性版本，功能与上一版完全一致。修复 JDK 1.6 与 JDK 1.8 两种 EAS 客户端的加载问题：探针里有一处只有 Java 7 才有的调用，在 JDK 1.6 的 EAS 上运行时会报错，已改为兼容写法；编译改为对着 Java 6 的标准库进行，从源头保证不再引用任何 Java 7+ 的接口，77 个类全部核验。另外修复 Windows 用户名带空格时（C:\\Users\\Zhang San\\...）启动参数被空格截断、导致 EAS 打不开的问题。升级后首次启动自动换用新版探针。",
+  "version": "1.7.13",
+  "released_at": "2026-10-21 17:21",
+  "notes": "新增掉线自动重连：EAS 长时间无操作会弹「掉线，请重新连接」的提示框，之前必须人工点一下重连才能继续，录单会卡在那里。现在探针会自动发现这个弹窗并点掉，全程无需人工救场。识别很谨慎，只处理包含掉线、重新登录、连接超时等字样的对话框，普通提示框（如「保存成功」）不会被触碰；每次自动处理都会写进探针日志。探针升到 1.5.10，升级后首次启动自动生效。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.12/EAS-AutoEntry-1.7.12-macos.zip",
-    "name": "EAS-AutoEntry-1.7.12-macos.zip",
-    "sha256": "cd1211144dff0947c26661d5c08529c48050ba1f40c2fcaab339a4221cce5a70",
-    "size": 18823327
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.13/EAS-AutoEntry-1.7.13-macos.zip",
+    "name": "EAS-AutoEntry-1.7.13-macos.zip",
+    "sha256": "87ea0539e99c4002c170bfeac0f7bd0e4086c00b6788ab0dfac37a8e0a5dad7a",
+    "size": 18827142
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.12/EAS-AutoEntry-1.7.12-windows.zip",
-    "name": "EAS-AutoEntry-1.7.12-windows.zip",
-    "sha256": "dc6f7e049618a2cc50c591b00d99475904c468186eefd5fb1d0efb3b1ecb4958",
-    "size": 13966787
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.13/EAS-AutoEntry-1.7.13-windows.zip",
+    "name": "EAS-AutoEntry-1.7.13-windows.zip",
+    "sha256": "5fd1916f7e37ea557e89906ecce790bc3157726762e881913d7d96188029bd25",
+    "size": 13970402
   }
 }
