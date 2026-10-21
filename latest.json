@@ -1,17 +1,17 @@
 {
-  "version": "1.7.7",
-  "released_at": "2026-10-21 13:01",
-  "notes": "## 现象\n序号 235（LFPH4BCP7L2L19674 / Z-RO2608290023K，11 个申请号、13 行配件分录）在第 10 步\n「提交索赔单」报「EAS 响应超时」，单据停在 ADD。弹窗抓出来是空的，看不出原因。\n\n## 根因（客户端日志 + 反编译 + 界面取值三重实证）\n- 这单末行配件分录是**零金额行**（ARAmount = 0）。\n- 「金额调整」按比例分摊实收材料后，把四舍五入的累计残差（−0.07）全部补在末行，\n  末行基数是 0 → 实收金额 = −0.07。\n- EAS 客户端提交前校验（RepairwarrantyEditUI.beforeStoreFields）：\n  「实收金额不能为空，且必须大于等于零」→ 拒绝提交，事务回滚、金额全部还原。\n- 弹窗文本渲染为空，所以工具侧只能看到「空提示 + 等状态超时」。\n\n## 修复（探针 1.5.6）\n- 第 8.5 步：金额调整后扫描工时/配件分录的实收金额，发现负数行 → 清零，\n  残差并入 ARAmount 最大的行（合计一分不动），日志写明「[12]→0 残差-0.07并入[0]」。\n- 无负数行的单零开销（只多两次表格读取）。\n- 新增诊断命令 `act cells <单据> <表格> [列…]`：直接读界面表格单元格\n  （数据对象因 storeFields 绑定异常不可信时的兜底取数路径）。\n\n## 验证\n- 故障单重跑：8.5 步命中修复 → 第 10 步提交一次通过 → 全流程 65s 完成，\n  终态 AUDIT / 7244.76 / WXJSA0092610210274，双窗口自动关闭。",
+  "version": "1.7.8",
+  "released_at": "2026-10-21 13:16",
+  "notes": "当前正在录入的那一行自动滚进视野并居中，跑一批单不用再手动拖着表格找进度；正在录入的行高亮加强（底色加深 + 左侧蓝条呼吸闪烁）。手动滚动表格时工具不抢位置，切换到下一单时自动恢复跟随。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.7/EAS-AutoEntry-1.7.7-macos.zip",
-    "name": "EAS-AutoEntry-1.7.7-macos.zip",
-    "sha256": "8c50b3f3ff80c92d980eec54384601d16e037a41b36cdedd5982158f603dc2e6",
-    "size": 18819881
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.8/EAS-AutoEntry-1.7.8-macos.zip",
+    "name": "EAS-AutoEntry-1.7.8-macos.zip",
+    "sha256": "6031577a019c1fe29a97757274f29e457292f9bbbecea84095f2ad9826874c58",
+    "size": 18820396
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.7/EAS-AutoEntry-1.7.7-windows.zip",
-    "name": "EAS-AutoEntry-1.7.7-windows.zip",
-    "sha256": "a087db2919edb7a0433e9df4cfc3d9da377b50c55031ef10282e31af18e10167",
-    "size": 13962661
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.8/EAS-AutoEntry-1.7.8-windows.zip",
+    "name": "EAS-AutoEntry-1.7.8-windows.zip",
+    "sha256": "1dd832d93c3b551045aaed5b62524e121dd3473c09235b4a6b48dee00d7b805b",
+    "size": 13962754
   }
 }
