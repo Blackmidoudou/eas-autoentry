@@ -4,6 +4,20 @@
 版本号遵循语义化版本。每次发版，客户端「检查更新」面板里显示的更新内容
 与这里的条目一致。
 
+## [1.7.12] - 2026-10-21
+
+### 修复（JDK 1.6 / 1.8 双版本客户端兼容）
+- **彻底不再使用 Java 7+ 的 API**：探针里有一处 `URLClassLoader.close()`（Java 7 才引入），
+  在 JDK 1.6 的 EAS 客户端上运行时会抛 `NoSuchMethodError`。改为反射调用，
+  取不到就跳过，交由 GC 回收
+- **编译方式改为对着 Java 6 的 rt.jar 编译**（`-bootclasspath`），从源头保证只用 1.6 的 API；
+  另外同步去掉了 `JComboBox<?>` 泛型写法（Java 6 的 Swing 还没有泛型化）
+- 字节码仍为 major 50，77 个类全部核验；无 `invokedynamic`、无 `java.nio.file` /
+  `java.lang.invoke` / `java.util.Objects` 等 1.7+ 引用、无 `com.sun.*` 内部 API
+- **Windows 路径含空格不再失败**：用户名带空格时（`C:\Users\Zhang San\...`），
+  注入的 JVM 参数会被空格截断导致 EAS 起不来，现在自动加双引号保护
+- 本版功能与 1.7.11 完全一致，仅解决兼容性；升级后首次启动自动换用探针 1.5.9
+
 ## [1.7.11] - 2026-10-21
 
 ### 改进（VIN 查询不再干等）
