@@ -4,6 +4,30 @@
 版本号遵循语义化版本。每次发版，客户端「检查更新」面板里显示的更新内容
 与这里的条目一致。
 
+## [1.7.9] - 2026-10-21
+
+### 修复（Windows 端探针注入）
+- **Windows 上「修复探针」必定失败的根因修复**：写给 EAS 启动配置的 bat 模板里带
+  `%JVM_CUSTOM_PARAMS%`，被 Python 的 `%` 格式化误当成占位符，抛
+  `unsupported format character 'J'`，注入永远走不到写入那一步。改成字符串拼接，
+  与变量语法彻底解耦
+- bat 注释前缀从 `#` 改成 `rem`（`#` 在批处理里会被当成命令执行并报错）
+- 写入时不再让换行被二次转义（原先 Windows 上会写出 `\r\r\n`，`set` 的值末尾多一个 CR）
+- 写配置保持原文件编码：中文 Windows 上 set-client-env.bat 常是 GBK，
+  原先按 UTF-8 强写会把文件里的中文注释写坏
+- `.orig` 备份改为存「已去掉注入块」的干净版本，还原时不会把注入内容又带回来
+- EAS 运行中 jar 被占用时，提示改成「先完全退出 EAS（任务管理器确认 javaw.exe 消失）」
+
+### 变更（探针兼容性）
+- 探针 1.5.7：两个 jar 改为 **Java 6 字节码**（major 50）。原先 major 52 在仍用
+  JDK 1.6 的旧 EAS 客户端上加载即报 `UnsupportedClassVersionError`，探针起不来
+- 功能与 1.5.6 一致（金额调整后修负实收、`act cells` 诊断）
+
+### 修复（界面）
+- 环境自检里的「手工写法」提示按平台显示：Windows 是
+  `set JVM_CUSTOM_PARAMS=%JVM_CUSTOM_PARAMS% ...`，macOS 是 `${JVM_CUSTOM_PARAMS}`。
+  原先 Windows 上也显示 Unix 写法，照抄会让 EAS 起不来
+
 ## [1.7.8] - 2026-10-21
 
 ### 新增（当前单跟随滚动）
