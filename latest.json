@@ -1,17 +1,17 @@
 {
-  "version": "1.7.11",
-  "released_at": "2026-10-21 15:19",
-  "notes": "VIN 查询不再干等：每次最多等 5 秒，没结果就再点一次查询，最多 3 次；3 次都查不到就判「EAS未查询到工单」直接跳过（原来一次要等 90 秒）。本版探针升到 1.5.8，升级后首次启动会自动换新探针，无需手动重装。",
+  "version": "1.7.12",
+  "released_at": "2026-10-21 15:29",
+  "notes": "兼容性版本，功能与上一版完全一致。修复 JDK 1.6 与 JDK 1.8 两种 EAS 客户端的加载问题：探针里有一处只有 Java 7 才有的调用，在 JDK 1.6 的 EAS 上运行时会报错，已改为兼容写法；编译改为对着 Java 6 的标准库进行，从源头保证不再引用任何 Java 7+ 的接口，77 个类全部核验。另外修复 Windows 用户名带空格时（C:\\Users\\Zhang San\\...）启动参数被空格截断、导致 EAS 打不开的问题。升级后首次启动自动换用新版探针。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.11/EAS-AutoEntry-1.7.11-macos.zip",
-    "name": "EAS-AutoEntry-1.7.11-macos.zip",
-    "sha256": "5cf2f5cd457db65a05ab800df2838aad66b9a49beb3c1b1d9e614d7f94301e17",
-    "size": 18823313
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.12/EAS-AutoEntry-1.7.12-macos.zip",
+    "name": "EAS-AutoEntry-1.7.12-macos.zip",
+    "sha256": "cd1211144dff0947c26661d5c08529c48050ba1f40c2fcaab339a4221cce5a70",
+    "size": 18823327
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.11/EAS-AutoEntry-1.7.11-windows.zip",
-    "name": "EAS-AutoEntry-1.7.11-windows.zip",
-    "sha256": "0a7ece865f454d75e49eead6ee7c94feea39498484305126f266f0a030c4d107",
-    "size": 13965845
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.12/EAS-AutoEntry-1.7.12-windows.zip",
+    "name": "EAS-AutoEntry-1.7.12-windows.zip",
+    "sha256": "dc6f7e049618a2cc50c591b00d99475904c468186eefd5fb1d0efb3b1ecb4958",
+    "size": 13966787
   }
 }
