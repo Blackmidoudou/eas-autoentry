@@ -1,17 +1,17 @@
 {
-  "version": "1.7.18",
-  "released_at": "2026-10-21 22:48",
-  "notes": "回滚到 v1.7.12 行为：去掉开始前弹窗自检与掉线自动重连（掉线弹窗恢复手动点重连），保留 1.7.14 的 Windows 关窗修复（录完单自动关本单窗口、收尾清残留）。探针 1.5.9 + 1.5.11，兼容 JDK 1.6 / 1.8。",
+  "version": "1.7.19",
+  "released_at": "2026-10-22 22:40",
+  "notes": "修复：已在 EAS 建过索赔单的工单（别人/别的电脑录的）不再卡住——第 2 步筛选读到「索赔标记」打勾就直接跳过（提示「索赔单已存在」），不再点关联生成、不弹窗、不等 60 秒；查不到工单统一提示「未见委托书」。探针 1.5.12 热加载即生效，装完不用重启 EAS。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.18/EAS-AutoEntry-1.7.18-macos.zip",
-    "name": "EAS-AutoEntry-1.7.18-macos.zip",
-    "sha256": "d2707339e29382c3b01e51994be782c19e113327dee70b68eb7a656345bb34be",
-    "size": 18827050
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.19/EAS-AutoEntry-1.7.19-macos.zip",
+    "name": "EAS-AutoEntry-1.7.19-macos.zip",
+    "sha256": "0015b95fadeca12e02adc2f7d998b4b5d9c3fac41675f23af3a0f10bc4e5a92f",
+    "size": 18826688
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.18/EAS-AutoEntry-1.7.18-windows.zip",
-    "name": "EAS-AutoEntry-1.7.18-windows.zip",
-    "sha256": "80429e84c36dd7fa88a056a9d14135ca8aa91a2f4011d188e8386a1cf3cf134f",
-    "size": 13971726
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.19/EAS-AutoEntry-1.7.19-windows.zip",
+    "name": "EAS-AutoEntry-1.7.19-windows.zip",
+    "sha256": "b36c5306d6b343840450556975a3159f02c5981b8b8c8586965dc2305475c374",
+    "size": 13983883
   }
 }
