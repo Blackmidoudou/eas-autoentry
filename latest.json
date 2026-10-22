@@ -1,17 +1,17 @@
 {
-  "version": "1.7.20",
-  "released_at": "2026-10-23 00:03",
-  "notes": "一键选择新增「只选失败」「只选跳过」；任何状态的单都可编辑——已成功的行可修改索赔/结算单号和备注（状态不变、不会重跑）",
+  "version": "1.7.21",
+  "released_at": "2026-10-23 00:15",
+  "notes": "修复：人工手工标记完成的单此前徽标显示「成功」而非「人工完成」（前端字段名笔误），已改正；仅文案差异，不影响功能。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.20/EAS-AutoEntry-1.7.20-macos.zip",
-    "name": "EAS-AutoEntry-1.7.20-macos.zip",
-    "sha256": "f42b1a214f852bdc433397777289a38fe01e031d295bf8c979e1170b36a26343",
-    "size": 18831587
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.21/EAS-AutoEntry-1.7.21-macos.zip",
+    "name": "EAS-AutoEntry-1.7.21-macos.zip",
+    "sha256": "95043c53264375654c997d2239859cc05251da7e746c744ac4a14aed5c5d3d19",
+    "size": 18831287
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.20/EAS-AutoEntry-1.7.20-windows.zip",
-    "name": "EAS-AutoEntry-1.7.20-windows.zip",
-    "sha256": "5a6e4078a70fa0c9a727808b0a1f6a2f68949cafc19f1096bb2a7dde9ac116c4",
-    "size": 13986113
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.21/EAS-AutoEntry-1.7.21-windows.zip",
+    "name": "EAS-AutoEntry-1.7.21-windows.zip",
+    "sha256": "3a1c0243170aba966249605b247d909f8b4f026fb912b8cbc8a7a943a81f18a7",
+    "size": 13984848
   }
 }
