@@ -1,17 +1,17 @@
 {
-  "version": "1.7.19",
-  "released_at": "2026-10-22 22:40",
-  "notes": "修复：已在 EAS 建过索赔单的工单（别人/别的电脑录的）不再卡住——第 2 步筛选读到「索赔标记」打勾就直接跳过（提示「索赔单已存在」），不再点关联生成、不弹窗、不等 60 秒；查不到工单统一提示「未见委托书」。探针 1.5.12 热加载即生效，装完不用重启 EAS。",
+  "version": "1.7.20",
+  "released_at": "2026-10-23 00:03",
+  "notes": "一键选择新增「只选失败」「只选跳过」；任何状态的单都可编辑——已成功的行可修改索赔/结算单号和备注（状态不变、不会重跑）",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.19/EAS-AutoEntry-1.7.19-macos.zip",
-    "name": "EAS-AutoEntry-1.7.19-macos.zip",
-    "sha256": "0015b95fadeca12e02adc2f7d998b4b5d9c3fac41675f23af3a0f10bc4e5a92f",
-    "size": 18826688
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.20/EAS-AutoEntry-1.7.20-macos.zip",
+    "name": "EAS-AutoEntry-1.7.20-macos.zip",
+    "sha256": "f42b1a214f852bdc433397777289a38fe01e031d295bf8c979e1170b36a26343",
+    "size": 18831587
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.19/EAS-AutoEntry-1.7.19-windows.zip",
-    "name": "EAS-AutoEntry-1.7.19-windows.zip",
-    "sha256": "b36c5306d6b343840450556975a3159f02c5981b8b8c8586965dc2305475c374",
-    "size": 13983883
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.20/EAS-AutoEntry-1.7.20-windows.zip",
+    "name": "EAS-AutoEntry-1.7.20-windows.zip",
+    "sha256": "5a6e4078a70fa0c9a727808b0a1f6a2f68949cafc19f1096bb2a7dde9ac116c4",
+    "size": 13986113
   }
 }
