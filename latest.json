@@ -1,17 +1,17 @@
 {
-  "version": "1.7.22",
-  "released_at": "2026-10-26 17:39",
-  "notes": "新增「导入EAS单号」：把 EAS 导出的索赔单查询/结算单查询表格导进来，按厂家工单号自动回填索赔/结算单号；两单齐全的行直接标成功，不再重跑。支持 .xls/.xlsx。",
+  "version": "1.7.23",
+  "released_at": "2026-10-26 17:44",
+  "notes": "修复：导入EAS单号时识别不到「索赔单查询」导出——其厂家工单号列表头实际叫「厂家编号」，已放宽匹配并用真实导出验证。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.22/EAS-AutoEntry-1.7.22-macos.zip",
-    "name": "EAS-AutoEntry-1.7.22-macos.zip",
-    "sha256": "d2748120db6bfd187e7f02ba9d8703334fff12cd8459b2d05cf0af68d9ac0906",
-    "size": 18979928
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.23/EAS-AutoEntry-1.7.23-macos.zip",
+    "name": "EAS-AutoEntry-1.7.23-macos.zip",
+    "sha256": "12c0c89b615c028d394f2287f466246ef48a83743babfa00ec8f83845545c56c",
+    "size": 18979917
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.22/EAS-AutoEntry-1.7.22-windows.zip",
-    "name": "EAS-AutoEntry-1.7.22-windows.zip",
-    "sha256": "0c1ccf76a6e9556a85e53aae9a41c3fc8bd3d47b97b84dca8b9332b597cfa1ed",
-    "size": 14133264
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.23/EAS-AutoEntry-1.7.23-windows.zip",
+    "name": "EAS-AutoEntry-1.7.23-windows.zip",
+    "sha256": "dcf8a262685acbb0aaaee7c975c4861fa639bd5938def64c2c99d67acd993530",
+    "size": 14132923
   }
 }
