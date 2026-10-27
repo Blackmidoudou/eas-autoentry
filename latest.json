@@ -1,17 +1,17 @@
 {
-  "version": "1.7.23",
-  "released_at": "2026-10-26 17:44",
-  "notes": "修复：导入EAS单号时识别不到「索赔单查询」导出——其厂家工单号列表头实际叫「厂家编号」，已放宽匹配并用真实导出验证。",
+  "version": "1.7.24",
+  "released_at": "2026-10-27 13:26",
+  "notes": "1. 跳过原因不再显示 java.lang.IllegalStateException 前缀，直接显示「索赔单已存在」。2. 导入EAS单号若没效果会明确说明原因（导出表只有表头没有数据 / 工单号对不上）。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.23/EAS-AutoEntry-1.7.23-macos.zip",
-    "name": "EAS-AutoEntry-1.7.23-macos.zip",
-    "sha256": "12c0c89b615c028d394f2287f466246ef48a83743babfa00ec8f83845545c56c",
-    "size": 18979917
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.24/EAS-AutoEntry-1.7.24-macos.zip",
+    "name": "EAS-AutoEntry-1.7.24-macos.zip",
+    "sha256": "bf527d498b137eec40d7b99f52a0a93b6b532d26c88cb3b51012387e901f85d4",
+    "size": 18980994
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.23/EAS-AutoEntry-1.7.23-windows.zip",
-    "name": "EAS-AutoEntry-1.7.23-windows.zip",
-    "sha256": "dcf8a262685acbb0aaaee7c975c4861fa639bd5938def64c2c99d67acd993530",
-    "size": 14132923
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.24/EAS-AutoEntry-1.7.24-windows.zip",
+    "name": "EAS-AutoEntry-1.7.24-windows.zip",
+    "sha256": "e54e75eb738f533c7e444c8e491f7f2315f03834c262d351f0d1a4d631b5b14e",
+    "size": 14134116
   }
 }
