@@ -1,17 +1,17 @@
 {
-  "version": "1.7.25",
-  "released_at": "2026-10-27 13:46",
-  "notes": "修复：导入EAS单号读不到被 WPS 打开/保存过的导出表（内部维度标记错误导致几千行读成 1 行）。修复后用真实导出验证：56 条「索赔单已存在」全部匹配，43 条自动标成功。",
+  "version": "1.7.26",
+  "released_at": "2026-10-29 19:33",
+  "notes": "新增「导入台账」：把别的电脑上的台账（本工具导出的 xlsx 或那台电脑的 results.tsv）导进来，按 VIN+委托书号接续——已成功并带单号的单直接标成功、不再重跑；跳过/失败连原因一起照搬。本机已成功的不受影响。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.25/EAS-AutoEntry-1.7.25-macos.zip",
-    "name": "EAS-AutoEntry-1.7.25-macos.zip",
-    "sha256": "77223e3cffe1ecbde0d85cf3808e8967cd53eed4070eb5678dba528acd655174",
-    "size": 18980877
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.26/EAS-AutoEntry-1.7.26-macos.zip",
+    "name": "EAS-AutoEntry-1.7.26-macos.zip",
+    "sha256": "56afe7a69b6a36184ce19f98bad793c34c2eb8f4f9e6494f2fd7da578bef02b9",
+    "size": 18988992
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.25/EAS-AutoEntry-1.7.25-windows.zip",
-    "name": "EAS-AutoEntry-1.7.25-windows.zip",
-    "sha256": "6fc23125df18ba256f2ec801498811f8cf8be5615c5f1daff8fd60feea4ae44e",
-    "size": 14132904
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.26/EAS-AutoEntry-1.7.26-windows.zip",
+    "name": "EAS-AutoEntry-1.7.26-windows.zip",
+    "sha256": "9f662bffa7990db78e51a907c9237b910b581bc7c1c1aa545713a2d1e49a86c7",
+    "size": 14140322
   }
 }
