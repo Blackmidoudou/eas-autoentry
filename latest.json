@@ -1,17 +1,17 @@
 {
-  "version": "1.7.29",
-  "released_at": "2026-10-30 11:37",
-  "notes": "环境自检新增探针加载状态：EAS 内仍是旧版探针时明确提示重启 EAS（Windows 上探针更新静默不生效的根因）",
+  "version": "1.7.30",
+  "released_at": "2026-10-30 12:04",
+  "notes": "Windows修复：更新后桌面反复弹黑色控制台窗口（更新脚本改用CREATE_NO_WINDOW+ping延时）",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.29/EAS-AutoEntry-1.7.29-macos.zip",
-    "name": "EAS-AutoEntry-1.7.29-macos.zip",
-    "sha256": "69566493906b65611ef134456f82ab261a32afe70391ef966e1f4f796f86b79e",
-    "size": 18991880
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.30/EAS-AutoEntry-1.7.30-macos.zip",
+    "name": "EAS-AutoEntry-1.7.30-macos.zip",
+    "sha256": "130998dc8aff5317ff8fec3b02ae2f0cee6df572cc45dfae23b7c6c63c792cd0",
+    "size": 18992631
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.29/EAS-AutoEntry-1.7.29-windows.zip",
-    "name": "EAS-AutoEntry-1.7.29-windows.zip",
-    "sha256": "645e6959f457e7941d3b4c6ef84d378f490210bcb7cdb4a6db055a34e8f4bf7d",
-    "size": 14142864
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.30/EAS-AutoEntry-1.7.30-windows.zip",
+    "name": "EAS-AutoEntry-1.7.30-windows.zip",
+    "sha256": "de91e33f10701750253ad8ded273d03358a6659f5be9ad889d9a4831f443d98e",
+    "size": 14143634
   }
 }
