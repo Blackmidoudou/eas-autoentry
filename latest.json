@@ -1,17 +1,17 @@
 {
-  "version": "1.7.30",
-  "released_at": "2026-10-30 12:04",
-  "notes": "Windows修复：更新后桌面反复弹黑色控制台窗口（更新脚本改用CREATE_NO_WINDOW+ping延时）",
+  "version": "1.7.31",
+  "released_at": "2026-10-30 16:06",
+  "notes": "索赔单修复：提交/驳回状态的行为强制跳过不再被重跑（避免建出0金额索赔单）；金额全0的行拒绝录单",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.30/EAS-AutoEntry-1.7.30-macos.zip",
-    "name": "EAS-AutoEntry-1.7.30-macos.zip",
-    "sha256": "130998dc8aff5317ff8fec3b02ae2f0cee6df572cc45dfae23b7c6c63c792cd0",
-    "size": 18992631
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.31/EAS-AutoEntry-1.7.31-macos.zip",
+    "name": "EAS-AutoEntry-1.7.31-macos.zip",
+    "sha256": "77f6e598ec149a1973d1c20cd3bfc2c38ebe6c0232b84b79d66f0ffbc78b5808",
+    "size": 18992358
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.30/EAS-AutoEntry-1.7.30-windows.zip",
-    "name": "EAS-AutoEntry-1.7.30-windows.zip",
-    "sha256": "de91e33f10701750253ad8ded273d03358a6659f5be9ad889d9a4831f443d98e",
-    "size": 14143634
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.31/EAS-AutoEntry-1.7.31-windows.zip",
+    "name": "EAS-AutoEntry-1.7.31-windows.zip",
+    "sha256": "d5476739051fb684334784b96fd104ca21d5527f463d9743aaa28cb4ca4e857d",
+    "size": 14144196
   }
 }
