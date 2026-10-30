@@ -1,17 +1,17 @@
 {
-  "version": "1.7.26",
-  "released_at": "2026-10-29 19:33",
-  "notes": "新增「导入台账」：把别的电脑上的台账（本工具导出的 xlsx 或那台电脑的 results.tsv）导进来，按 VIN+委托书号接续——已成功并带单号的单直接标成功、不再重跑；跳过/失败连原因一起照搬。本机已成功的不受影响。",
+  "version": "1.7.27",
+  "released_at": "2026-10-30 10:21",
+  "notes": "维修工单查询的进场日期起点改为导入工单的最早开单日（原固定近6个月），老工单不再静默查不到",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.26/EAS-AutoEntry-1.7.26-macos.zip",
-    "name": "EAS-AutoEntry-1.7.26-macos.zip",
-    "sha256": "56afe7a69b6a36184ce19f98bad793c34c2eb8f4f9e6494f2fd7da578bef02b9",
-    "size": 18988992
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.27/EAS-AutoEntry-1.7.27-macos.zip",
+    "name": "EAS-AutoEntry-1.7.27-macos.zip",
+    "sha256": "f9b4e7c3538dbd7e5fad6b4c344c98bdaee2496efeb531093be0360105609fa8",
+    "size": 18989614
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.26/EAS-AutoEntry-1.7.26-windows.zip",
-    "name": "EAS-AutoEntry-1.7.26-windows.zip",
-    "sha256": "9f662bffa7990db78e51a907c9237b910b581bc7c1c1aa545713a2d1e49a86c7",
-    "size": 14140322
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.27/EAS-AutoEntry-1.7.27-windows.zip",
+    "name": "EAS-AutoEntry-1.7.27-windows.zip",
+    "sha256": "3b15bc673e3c1f5d399684cf4dc5405354c9d65b0269804e355ac598bca996a9",
+    "size": 14141180
   }
 }
