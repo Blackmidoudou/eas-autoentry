@@ -1,17 +1,17 @@
 {
-  "version": "1.7.28",
-  "released_at": "2026-10-30 10:54",
-  "notes": "Windows修复：界面改走内置HTTP服务（WebView2 file://桥注入不可靠导致的点不动）；单实例保护；启动诊断日志；修正1.7.27漏更的probe.json",
+  "version": "1.7.29",
+  "released_at": "2026-10-30 11:37",
+  "notes": "环境自检新增探针加载状态：EAS 内仍是旧版探针时明确提示重启 EAS（Windows 上探针更新静默不生效的根因）",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.28/EAS-AutoEntry-1.7.28-macos.zip",
-    "name": "EAS-AutoEntry-1.7.28-macos.zip",
-    "sha256": "59b7f149dc2e5f88774dd4696d7fbf257ae4728e0fca97f7053bc03db57febc4",
-    "size": 18991433
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.29/EAS-AutoEntry-1.7.29-macos.zip",
+    "name": "EAS-AutoEntry-1.7.29-macos.zip",
+    "sha256": "69566493906b65611ef134456f82ab261a32afe70391ef966e1f4f796f86b79e",
+    "size": 18991880
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.28/EAS-AutoEntry-1.7.28-windows.zip",
-    "name": "EAS-AutoEntry-1.7.28-windows.zip",
-    "sha256": "38a30bc716a2bec6e2c8e510a6911829af12d67071204ca1ddd275fc64b4f6c4",
-    "size": 14142659
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.29/EAS-AutoEntry-1.7.29-windows.zip",
+    "name": "EAS-AutoEntry-1.7.29-windows.zip",
+    "sha256": "645e6959f457e7941d3b4c6ef84d378f490210bcb7cdb4a6db055a34e8f4bf7d",
+    "size": 14142864
   }
 }
