@@ -1,17 +1,17 @@
 {
-  "version": "1.7.27",
-  "released_at": "2026-10-30 10:21",
-  "notes": "维修工单查询的进场日期起点改为导入工单的最早开单日（原固定近6个月），老工单不再静默查不到",
+  "version": "1.7.28",
+  "released_at": "2026-10-30 10:54",
+  "notes": "Windows修复：界面改走内置HTTP服务（WebView2 file://桥注入不可靠导致的点不动）；单实例保护；启动诊断日志；修正1.7.27漏更的probe.json",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.27/EAS-AutoEntry-1.7.27-macos.zip",
-    "name": "EAS-AutoEntry-1.7.27-macos.zip",
-    "sha256": "f9b4e7c3538dbd7e5fad6b4c344c98bdaee2496efeb531093be0360105609fa8",
-    "size": 18989614
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.28/EAS-AutoEntry-1.7.28-macos.zip",
+    "name": "EAS-AutoEntry-1.7.28-macos.zip",
+    "sha256": "59b7f149dc2e5f88774dd4696d7fbf257ae4728e0fca97f7053bc03db57febc4",
+    "size": 18991433
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.27/EAS-AutoEntry-1.7.27-windows.zip",
-    "name": "EAS-AutoEntry-1.7.27-windows.zip",
-    "sha256": "3b15bc673e3c1f5d399684cf4dc5405354c9d65b0269804e355ac598bca996a9",
-    "size": 14141180
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.28/EAS-AutoEntry-1.7.28-windows.zip",
+    "name": "EAS-AutoEntry-1.7.28-windows.zip",
+    "sha256": "38a30bc716a2bec6e2c8e510a6911829af12d67071204ca1ddd275fc64b4f6c4",
+    "size": 14142659
   }
 }
