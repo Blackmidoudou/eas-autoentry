@@ -1,17 +1,17 @@
 {
-  "version": "1.7.34",
-  "released_at": "2026-11-01 23:08",
-  "notes": "修复市场处置界面单据金额显示0.00的假象（历史跳过记录残留，实际录单金额一直正确）；合并组的合计金额逻辑经实测无误",
+  "version": "1.7.35",
+  "released_at": "2026-11-01 23:18",
+  "notes": "修复聚合单状态判定：同一委托书里只要有一条是「提交」或不在白名单（一审/入库驳回），整张单都不录入——EAS 里这是一张单、拆不开，之前会只录一审的那几条，造出金额不全的单。市场处置同口径。整组跳过的单金额按整组汇总显示。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.34/EAS-AutoEntry-1.7.34-macos.zip",
-    "name": "EAS-AutoEntry-1.7.34-macos.zip",
-    "sha256": "b77f70a9e44325587e61edfbe97178bc7db7f45878d2669263a51f31aee61f7c",
-    "size": 18995389
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.35/EAS-AutoEntry-1.7.35-macos.zip",
+    "name": "EAS-AutoEntry-1.7.35-macos.zip",
+    "sha256": "8818f4ddc417b011af3103c6a1ce7dda4789c11e6a62aad34586b2558ee56989",
+    "size": 18996203
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.34/EAS-AutoEntry-1.7.34-windows.zip",
-    "name": "EAS-AutoEntry-1.7.34-windows.zip",
-    "sha256": "0ee59f696bc8867a51d9b216fbcdbe0d15b2536b77ea2ad4c04f7eda2e0e220a",
-    "size": 14148676
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.35/EAS-AutoEntry-1.7.35-windows.zip",
+    "name": "EAS-AutoEntry-1.7.35-windows.zip",
+    "sha256": "9258c3264b610e0367066c9c9d83b871169dea789ceb8b0c71b9e0958e0b13ca",
+    "size": 14148633
   }
 }
