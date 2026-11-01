@@ -1,17 +1,17 @@
 {
-  "version": "1.7.36",
-  "released_at": "2026-11-01 23:33",
-  "notes": "整组状态不齐的合并单，导入台账时就合并成一张并直接标「需人工」，备注写清整组几条符合、几条不符合（例：整组 7 条：2 条符合（一审/入库驳回），5 条不符合（提交）→ 整组不录入）。只有整组状态齐全的单才是「待跑」可用工具跑；「需人工」的行不给勾选。台账新增「需人工」计数与分表。",
+  "version": "1.7.37",
+  "released_at": "2026-11-02 00:02",
+  "notes": "以前只录过一部分的组（台账里缺申请号）重新导入时改标「需人工」，备注写清缺哪几个申请号；整组已全部录入过的仍保持「成功」，不受 DMS 后续状态变化影响。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.36/EAS-AutoEntry-1.7.36-macos.zip",
-    "name": "EAS-AutoEntry-1.7.36-macos.zip",
-    "sha256": "96313dd353d2e4b097707cc4da6d5a5329cfa121e87d115b7567b978a767ed10",
-    "size": 18997129
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.37/EAS-AutoEntry-1.7.37-macos.zip",
+    "name": "EAS-AutoEntry-1.7.37-macos.zip",
+    "sha256": "35544fcfb831d5f03204b84ccd29b3ee1498bde88220cc7f1b639be992dc0b9f",
+    "size": 18997137
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.36/EAS-AutoEntry-1.7.36-windows.zip",
-    "name": "EAS-AutoEntry-1.7.36-windows.zip",
-    "sha256": "30b6b2c19abcb35a6af14e14657602c4a0cd9618ad31317e3c52440d0c24569c",
-    "size": 14149231
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.37/EAS-AutoEntry-1.7.37-windows.zip",
+    "name": "EAS-AutoEntry-1.7.37-windows.zip",
+    "sha256": "9b186344b9d35785758ab9419052720f62142ff9b74c30ab85595c7a5d78ee3f",
+    "size": 14149974
   }
 }
