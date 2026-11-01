@@ -1,17 +1,17 @@
 {
-  "version": "1.7.32",
-  "released_at": "2026-10-30 16:12",
-  "notes": "索赔单导入改白名单口径：只录一审/入库驳回，提交/录入/一审驳回等状态自动剔除；状态列异常时自动退回",
+  "version": "1.7.33",
+  "released_at": "2026-11-01 17:15",
+  "notes": "第9步金额核对：EAS下推工时费为0的单快速失败并说明原因（不再卡60秒），失败时输出金额现场便于排查",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.32/EAS-AutoEntry-1.7.32-macos.zip",
-    "name": "EAS-AutoEntry-1.7.32-macos.zip",
-    "sha256": "aaf915e46990ad1f042ead9a9b1864f9e2d837876c8b66a525096778a7a3f99e",
-    "size": 18992880
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.33/EAS-AutoEntry-1.7.33-macos.zip",
+    "name": "EAS-AutoEntry-1.7.33-macos.zip",
+    "sha256": "e8cbf17ef4ae2587618cc1c6cb72312063b908eb2c04a7ff1ebf2c0098cd2bac",
+    "size": 18995547
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.32/EAS-AutoEntry-1.7.32-windows.zip",
-    "name": "EAS-AutoEntry-1.7.32-windows.zip",
-    "sha256": "81bc7f08d69b720636a90452b09e441f3eb11d107e841d777de04681517bfe4b",
-    "size": 14144838
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.33/EAS-AutoEntry-1.7.33-windows.zip",
+    "name": "EAS-AutoEntry-1.7.33-windows.zip",
+    "sha256": "5694e03f48b0c567ad9363bf70089d36338840985177ac82eff428f90369bcc5",
+    "size": 14148469
   }
 }
