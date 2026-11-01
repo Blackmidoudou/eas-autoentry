@@ -1,17 +1,17 @@
 {
-  "version": "1.7.33",
-  "released_at": "2026-11-01 17:15",
-  "notes": "第9步金额核对：EAS下推工时费为0的单快速失败并说明原因（不再卡60秒），失败时输出金额现场便于排查",
+  "version": "1.7.34",
+  "released_at": "2026-11-01 23:08",
+  "notes": "修复市场处置界面单据金额显示0.00的假象（历史跳过记录残留，实际录单金额一直正确）；合并组的合计金额逻辑经实测无误",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.33/EAS-AutoEntry-1.7.33-macos.zip",
-    "name": "EAS-AutoEntry-1.7.33-macos.zip",
-    "sha256": "e8cbf17ef4ae2587618cc1c6cb72312063b908eb2c04a7ff1ebf2c0098cd2bac",
-    "size": 18995547
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.34/EAS-AutoEntry-1.7.34-macos.zip",
+    "name": "EAS-AutoEntry-1.7.34-macos.zip",
+    "sha256": "b77f70a9e44325587e61edfbe97178bc7db7f45878d2669263a51f31aee61f7c",
+    "size": 18995389
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.33/EAS-AutoEntry-1.7.33-windows.zip",
-    "name": "EAS-AutoEntry-1.7.33-windows.zip",
-    "sha256": "5694e03f48b0c567ad9363bf70089d36338840985177ac82eff428f90369bcc5",
-    "size": 14148469
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.34/EAS-AutoEntry-1.7.34-windows.zip",
+    "name": "EAS-AutoEntry-1.7.34-windows.zip",
+    "sha256": "0ee59f696bc8867a51d9b216fbcdbe0d15b2536b77ea2ad4c04f7eda2e0e220a",
+    "size": 14148676
   }
 }
