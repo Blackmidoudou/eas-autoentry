@@ -1,17 +1,17 @@
 {
-  "version": "1.7.37",
-  "released_at": "2026-11-02 00:02",
-  "notes": "以前只录过一部分的组（台账里缺申请号）重新导入时改标「需人工」，备注写清缺哪几个申请号；整组已全部录入过的仍保持「成功」，不受 DMS 后续状态变化影响。",
+  "version": "1.7.38",
+  "released_at": "2026-11-02 00:20",
+  "notes": "修复已录组的完整性比对：组里后来新增、还没有索赔单号的明细不再被旧记录盖成「成功」，整组改标「需人工」并写明缺口；人工标记完成过的组不再对无单号明细反复标。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.37/EAS-AutoEntry-1.7.37-macos.zip",
-    "name": "EAS-AutoEntry-1.7.37-macos.zip",
-    "sha256": "35544fcfb831d5f03204b84ccd29b3ee1498bde88220cc7f1b639be992dc0b9f",
-    "size": 18997137
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.38/EAS-AutoEntry-1.7.38-macos.zip",
+    "name": "EAS-AutoEntry-1.7.38-macos.zip",
+    "sha256": "c46c4563cab2d118b1621ffc13012d4090de5ed482bb62052bc0d831e173329b",
+    "size": 18995631
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.37/EAS-AutoEntry-1.7.37-windows.zip",
-    "name": "EAS-AutoEntry-1.7.37-windows.zip",
-    "sha256": "9b186344b9d35785758ab9419052720f62142ff9b74c30ab85595c7a5d78ee3f",
-    "size": 14149974
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.38/EAS-AutoEntry-1.7.38-windows.zip",
+    "name": "EAS-AutoEntry-1.7.38-windows.zip",
+    "sha256": "47397a95b3811736d74e09b7c88ba43d945419b9fe802dc0befd9e000788612a",
+    "size": 14150949
   }
 }
