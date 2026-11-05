@@ -1,17 +1,17 @@
 {
-  "version": "1.7.38",
-  "released_at": "2026-11-02 00:20",
-  "notes": "修复已录组的完整性比对：组里后来新增、还没有索赔单号的明细不再被旧记录盖成「成功」，整组改标「需人工」并写明缺口；人工标记完成过的组不再对无单号明细反复标。",
+  "version": "1.7.39",
+  "released_at": "2026-11-05 13:22",
+  "notes": "市场处置口径调整：只跳过「录入」状态的明细，其余照录；多条明细合并时材料费累加、结算金额累加，工时费=合并结算金额−合并材料费，合计按结算金额填。台账导入时若 EAS 已有索赔单和结算单，直接按成功接续并导入两个单号，不再重跑。",
   "macos": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.38/EAS-AutoEntry-1.7.38-macos.zip",
-    "name": "EAS-AutoEntry-1.7.38-macos.zip",
-    "sha256": "c46c4563cab2d118b1621ffc13012d4090de5ed482bb62052bc0d831e173329b",
-    "size": 18995631
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.39/EAS-AutoEntry-1.7.39-macos.zip",
+    "name": "EAS-AutoEntry-1.7.39-macos.zip",
+    "sha256": "1a90771e7219ea4f567f830fb1a0ccc30c777dc4fe8c48ed696c5eb765845c84",
+    "size": 18999310
   },
   "windows": {
-    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.38/EAS-AutoEntry-1.7.38-windows.zip",
-    "name": "EAS-AutoEntry-1.7.38-windows.zip",
-    "sha256": "47397a95b3811736d74e09b7c88ba43d945419b9fe802dc0befd9e000788612a",
-    "size": 14150949
+    "file": "https://github.com/Blackmidoudou/eas-autoentry/releases/download/v1.7.39/EAS-AutoEntry-1.7.39-windows.zip",
+    "name": "EAS-AutoEntry-1.7.39-windows.zip",
+    "sha256": "58d16eb4e1ca859269669432b9959e38f8f0a0c5aefbb8ef97caca14dc142506",
+    "size": 14151130
   }
 }
